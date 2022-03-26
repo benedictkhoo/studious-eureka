@@ -1,0 +1,14 @@
+{
+  "name": "studious-eureka",
+  "version": "1.0.0",
+  "author": "Benedict Khoo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benedictkhoo/studious-eureka.git"
+  },
+  "devDependencies": {
+    "ganache": "7.0.3",
+    "truffle": "5.5.6"
+  }
+}
