@@ -12,7 +12,7 @@
     "console": "truffle console --network development",
     "ganache": "ganache --deterministic",
     "migrate": "truffle migrate --reset --network development",
-    "test": "truffle test"
+    "test": "truffle test ./test/BenedictNFT.test.js && truffle test ./test/BenedictToken.test.js"
   },
   "dependencies": {
     "@openzeppelin/contracts-upgradeable": "4.5.2"
