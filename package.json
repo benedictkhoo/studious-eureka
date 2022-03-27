@@ -7,8 +7,22 @@
     "type": "git",
     "url": "https://github.com/benedictkhoo/studious-eureka.git"
   },
+  "scripts": {
+    "compile": "truffle compile --all",
+    "console": "truffle console --network development",
+    "ganache": "ganache --deterministic",
+    "migrate": "truffle migrate --reset --network development",
+    "test": "truffle test"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "4.5.2"
+  },
   "devDependencies": {
+    "@openzeppelin/test-helpers": "0.5.15",
+    "@openzeppelin/truffle-upgrades": "1.14.0",
+    "chai": "4.3.6",
     "ganache": "7.0.3",
+    "mocha": "9.2.2",
     "truffle": "5.5.6"
   }
 }

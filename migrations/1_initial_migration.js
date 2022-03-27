@@ -1,5 +1,6 @@
-const Migrations = artifacts.require("Migrations");
+const { deployProxy } = require('@openzeppelin/truffle-upgrades');
+const BenedictNFT = artifacts.require('BenedictNFT');
 
-module.exports = function (deployer) {
-  deployer.deploy(Migrations);
+module.exports = async (deployer) => {
+  await deployProxy(BenedictNFT, [], { deployer, kind: 'uups' });
 };
